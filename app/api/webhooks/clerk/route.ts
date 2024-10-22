@@ -46,6 +46,7 @@ export async function POST(req: Request) {
 
   const { id } = evt.data;
   const eventType = evt.type;
+  console.log("Webhook payload:", evt);
 
   try {
     if (eventType === "user.created") {
